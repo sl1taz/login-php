@@ -11,8 +11,13 @@ include("auth_session.php");
 </head>
 <body>
     <div class="form">
-        <p>Hey, <?php echo $_SESSION['username']; ?>!</p>
-        <p>You are in user dashboard page.</p>
+        <p>Olá, <?php echo $_SESSION['username']; ?>!</p>
+        <p>Você está na página do painel do usuário.</p>
+        <?php 
+        if(isset($_COOKIE['user_login'])) {
+            echo "<p>Você tem um cookie de login ativo.</p>";
+        }
+        ?>
         <p><a href="logout.php">Logout</a></p>
     </div>
 </body>

@@ -50,3 +50,15 @@ h3 {
     font-weight: normal;
     text-align: center;
 }
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.remember-me input {
+    margin-right: 8px;
+}
+.remember-me label {
+    color: #666;
+    font-size: 14px;
+}
